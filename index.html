@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Daric Lim">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Daric's Stuff - Home</title>
+
+
+    <!-- favicon -->
+    <link rel="icon" href="images/DaricLogo_v1.png">
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="style.css" >
+
+    <!--font from Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="navbar-contents">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/DaricLogo_v1.svg">
+        </a>
+        <div class="navmenu">
+          <div class="navmenu-item">
+            <a class="nav-link active-link" href="index.html">Home</a>
+          </div>
+          <div class="navmenu-item">
+            <a class="nav-link" href="uxdesign.html">UX Design</a>
+          </div>
+          <div class="navmenu-item">
+            <a class="nav-link" href="graphicdesign.html">Graphic Design</a>
+          </div>
+          <div class="navmenu-item">
+            <a class="nav-link" href="animation.html">Animation</a>
+          </div>
+          <div class="navmenu-item">
+            <a class="nav-link" href="about.html">About</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner">
+    </div>
+
+    <div class="previewtable">
+      <div class="preview" id="preview-ux">
+        <div class="preview-group">
+          <div class="preview-pic">
+            <img src="images/homepage-uxpic.png" width="300" height="200">
+          </div>
+          <div class="preview-right">
+            <div class="preview-desc">
+              <h1>UX Design + Development</h1>
+              <span>Examples of my work with front-end development, user-interface design, Figma prototypes</span>
+              <a class="seemore-btn" href="uxdesign.html" style="color: #22AE84"> SEE MORE </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="preview" id="preview-graphic">
+        <div class="preview-group">
+          <div class="preview-pic">
+            <div class="testImg">
+            </div>
+          </div>
+          <div class="preview-right">
+            <div class="preview-desc">
+              <h1>Graphic Design</h1>
+              <span>Examples of my work with front-end development, user-interface design, Figma prototypes</span>
+              <a class="seemore-btn" href="graphicdesign.html" style="color: #D95959"> SEE MORE </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="preview" id="preview-animation">
+        <div class="preview-group">
+          <div class="preview-pic">
+            <div class="testImg">
+            </div>
+          </div>
+          <div class="preview-right">
+            <div class="preview-desc">
+              <h1>Animation</h1>
+              <span>Examples of my work with front-end development, user-interface design, Figma prototypes</span>
+              <a class="seemore-btn" href="animation.html" style="color: #466DB8"> SEE MORE </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="preview" id="preview-aboutme">
+        <div class="preview-group">
+          <div class="preview-pic">
+            <div class="testImg">
+            </div>
+          </div>
+          <div class="preview-right">
+            <div class="preview-desc">
+              <h1>About Me</h1>
+
+              <a class="seemore-btn" href="about.html" style="color: #1B1B1B"> SEE MORE </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script>
+        window.addEventListener('scroll',(e)=>{
+          const navbar = document.querySelector('.navbar');
+          if (window.pageYOffset>0){
+            navbar.classList.add("add-shadow");
+          } else {
+            navbar.classList.remove("add-shadow");
+          }
+        });
+    </script>
+  </body>
+</html>
