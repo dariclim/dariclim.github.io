@@ -95,12 +95,6 @@ body {
   }
 }
 
-
-
-
-
-
-
 .banner-text-group {
   margin-top: 45px;
 }
@@ -113,6 +107,7 @@ body {
   align-items: center;
   color: white;
   flex-direction: row;
+  overflow: hidden; 
 }
 .banner-propic img {
   /*width: 350px;*/
