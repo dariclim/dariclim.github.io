@@ -301,6 +301,7 @@ body {
   }
   .banner-text-group {
     margin-left: 55px;
+    margin-right: -50px;
   }
   .banner-desc {
     font-size: 10px;
