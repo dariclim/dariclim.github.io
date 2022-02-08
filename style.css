@@ -249,7 +249,7 @@ body {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 695px) and (max-width: 1000px) {
   .banner h1 {
     font-size: 45px;
   }
@@ -268,10 +268,46 @@ body {
   .contact-btn {
     margin-top: 25px;
   }
-
 }
-@media screen and (max-width: 695px) {
-
+@media screen and (min-width: 630px) and (max-width: 694px) {
+  .banner h1 {
+    font-size: 40px;
+  }
+  .banner-propic img {
+    height: 400px;
+  }
+  .banner {
+    height: 400px;
+  }
+  .banner-text-group {
+    margin-left: 55px;
+  }
+  .banner-desc {
+    font-size: 14px;
+  }
+  .contact-btn {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 629px) {
+  .banner h1 {
+    font-size: 26px;
+  }
+  .banner-propic img {
+    height: 400px;
+  }
+  .banner {
+    height: 400px;
+  }
+  .banner-text-group {
+    margin-left: 55px;
+  }
+  .banner-desc {
+    font-size: 10px;
+  }
+  .contact-btn {
+    margin-top: 25px;
+  }
 }
 
 .hover-btn:hover {
