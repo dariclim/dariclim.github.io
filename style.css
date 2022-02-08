@@ -271,7 +271,7 @@ body {
 
 }
 @media screen and (max-width: 695px) {
-  
+
 }
 
 .hover-btn:hover {
@@ -279,7 +279,7 @@ body {
   transition: background-color 1s ease;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 760px) and (min-width: 500px) {
   .preview-desc {
     width: 80%;
     margin-right: 30px;
@@ -300,7 +300,12 @@ body {
   }
 
 }
-
+@media screen and (max-width: 499px) {
+  .preview-pic img {
+    width: 200px;
+    height: 150px;
+  }
+}
 
 
 
