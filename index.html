@@ -31,20 +31,26 @@
         <a href="index.html" class="navbar-brand">
           <img src="images/DaricLogo_v1.svg">
         </a>
-        <div class="navmenu">
-          <div class="navmenu-item">
-            <a class="nav-link active-link" href="index.html">Home</a>
+        <div class="navright">
+          <div class="navmenu" id="myNavmenu">
+            <div class="navmenu-item">
+              <a class="nav-link active-link" href="index.html">Home</a>
+            </div>
+            <div class="navmenu-item">
+              <a class="nav-link" href="uxdesign.html">UX Design</a>
+            </div>
+            <div class="navmenu-item">
+              <a class="nav-link" href="graphicdesign.html">Graphic Design</a>
+            </div>
+            <div class="navmenu-item">
+              <a class="nav-link" href="animation.html">Animation</a>
+            </div>
           </div>
-          <div class="navmenu-item">
-            <a class="nav-link" href="uxdesign.html">UX Design</a>
-          </div>
-          <div class="navmenu-item">
-            <a class="nav-link" href="graphicdesign.html">Graphic Design</a>
-          </div>
-          <div class="navmenu-item">
-            <a class="nav-link" href="animation.html">Animation</a>
+          <div class="burger" onclick="myFunction()">
+            <img src="images/burger.svg" width="18">
           </div>
         </div>
+        
       </div>
     </nav>
 
@@ -70,7 +76,7 @@
       <div class="preview" id="preview-ux">
         <div class="preview-group">
           <div class="preview-pic">
-            <img src="images/homepage-uxpic.png" width="300" height="200">
+            <img src="images/homepage-uxpic.png">
           </div>
           <div class="preview-right">
             <div class="preview-desc">
@@ -84,7 +90,7 @@
       <div class="preview" id="preview-graphic">
         <div class="preview-group">
           <div class="preview-pic">
-            <img src="images/homepage-graphicpic.png" width="300" height="200">
+            <img src="images/homepage-graphicpic.png">
           </div>
           <div class="preview-right">
             <div class="preview-desc">
@@ -118,12 +124,27 @@
     <script>
         window.addEventListener('scroll',(e)=>{
           const navbar = document.querySelector('.navbar');
-          if (window.pageYOffset>0){
+          var x = document.getElementById("myNavmenu");
+          if (window.pageYOffset>0) {
             navbar.classList.add("add-shadow");
-          } else {
+          } else if (x.className === "navmenu") {
             navbar.classList.remove("add-shadow");
           }
         });
+
+        function myFunction() {
+         var x = document.getElementById("myNavmenu");
+         const navbar = document.querySelector('.navbar');
+         if (x.className === "navmenu") {
+           x.className += " responsive";
+           navbar.classList.add("add-shadow");
+         } else {
+           x.className = "navmenu";
+           if (window.pageYOffset === 0) {
+            navbar.classList.remove("add-shadow");
+           }
+         }
+        }
     </script>
   </body>
 </html>
