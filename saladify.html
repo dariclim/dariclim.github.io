@@ -46,23 +46,28 @@
     <nav class="navbar">
       <div class="navbar-contents">
         <a href="index.html" class="navbar-brand">
-          <img src="images/DaricLogo_v1.svg" width="75" height="75">
+          <img src="images/DaricLogo_v1.svg">
         </a>
-
-        <div class="navmenu">
-          <div class="navmenu-item">
-            <a class="nav-link" href="index.html">Home</a>
+        <div class="navright">
+          <div class="navmenu" id="myNavmenu">
+            <div class="navmenu-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </div>
+            <div class="navmenu-item active-link">
+              <a class="nav-link active-link" href="uxdesign.html">UX Design</a>
+            </div>
+            <div class="navmenu-item">
+              <a class="nav-link" href="graphicdesign.html">Graphic Design</a>
+            </div>
+            <div class="navmenu-item">
+              <a class="nav-link" href="animation.html">Animation</a>
+            </div>
           </div>
-          <div class="navmenu-item">
-            <a class="nav-link active-link" href="uxdesign.html">UX Design</a>
-          </div>
-          <div class="navmenu-item">
-            <a class="nav-link" href="graphicdesign.html">Graphic Design</a>
-          </div>
-          <div class="navmenu-item">
-            <a class="nav-link" href="animation.html">Animation</a>
+          <div class="burger" onclick="myFunction()">
+            <img src="images/burger.svg" width="18">
           </div>
         </div>
+        
       </div>
     </nav>
 
@@ -87,7 +92,7 @@
 
     <div class="detail-body" style="background-color: #31A05E">
 
-      <div class="body-paragraph" style="margin-top: 100px;">
+      <div class="body-paragraph paragraph-bg">
         <h1>BACKGROUND</h1>
         <span>
           Saladify is a mobile app targeted towards salad lovers, and other health conscious individuals seeking to discover new salad recipes and figure out what kind of salads they can make with ingredients they have at home.
@@ -299,7 +304,19 @@
             navbar.classList.remove("add-shadow");
           }
         });
-
+        function myFunction() {
+         var x = document.getElementById("myNavmenu");
+         const navbar = document.querySelector('.navbar');
+         if (x.className === "navmenu") {
+           x.className += " responsive";
+           navbar.classList.add("add-shadow");
+         } else {
+           x.className = "navmenu";
+           if (window.pageYOffset === 0) {
+            navbar.classList.remove("add-shadow");
+           }
+         }
+        }
 
 
     </script>

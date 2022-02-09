@@ -64,7 +64,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .navmenu div:not(:first-child) {
+  .navmenu div:not(.active-link) {
     display: none;
   }
   .nav-link {
@@ -663,6 +663,8 @@ footer {
  flex-direction: column;
 }
 
+
+
 .body-paragraph {
   display: flex;
   flex-direction: column;
@@ -685,6 +687,10 @@ footer {
 .body-paragraph h3 {
   margin: 0;
   margin-top: 45px;
+}
+
+.paragraph-bg {
+  margin-top: 100px;
 }
 
 .body-paragraph span {
@@ -775,4 +781,68 @@ footer {
   margin-top: 15px;
   margin-bottom: 15px;
   border-radius: 11px;
+}
+@media screen and (max-width: 600px) {
+  .detail-desc {
+    font-size: 12px;
+    flex-direction: column;
+  }
+  .detail-desc-caption {
+    margin-top: 12px;
+  }
+  .detail-heading {
+    margin-bottom: 50px;
+  }
+  .body-paragraph {
+    margin-top: 80px;
+  }
+  .body-paragraph h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .body-paragraph h3 {
+    font-size: 20px;
+  }
+  .body-paragraph span {
+    font-size: 15px;
+    width: 70%;
+  }
+  .paragraph-bg {
+    margin-top: 60px;
+  }
+  .body-large-img {
+    width: 80%;
+    border-radius: 25px;
+  }
+  .body-large-img img {
+    width: 95%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image-link {
+    display: flex;
+  }
+  .body-mobilegif {
+    width: 80%;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .mobilegif-holder img {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+  }
+  .mobilegif-holder {
+    width: 100%;
+  }
+  .mobilegif-steps {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .step-group {
+    padding-left: 0;
+  }
 }
