@@ -574,6 +574,63 @@ body {
 
 
 
+#saladify-overlay img {
+  width: 65px;
+}
+
+#ezcolor-overlay img {
+  height: 60px;
+}
+
+#talad-overlay img {
+  height: 75px;
+}
+
+#talad-big {
+  font-size: 45px;
+  font-weight: 700; 
+  margin-bottom: -5px;
+}
+#talad-small {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 650px) {
+  #saladify-overlay img {
+    width: 45px;
+  }
+  #saladify-overlay h1 {
+    font-size: 25px;
+  }
+  #ezcolor-overlay img {
+    height: 40px;
+  }
+  #ezcolor-overlay h1 {
+    font-size: 30px;
+  }
+  #talad-overlay img {
+    height: 45px;
+  }
+  #talad-overlay h1 {
+    font-size: 35px;
+  }
+  #talad-big {
+    font-size: 28px;
+    font-weight: 700; 
+    margin-bottom: 0px;
+  }
+  #talad-small {
+    font-size: 8px;
+    font-weight: 200;
+  }
+}
+
+
+
+
+
+
 .detail-list-dud {
   visibility: hidden;
 }
@@ -782,6 +839,8 @@ footer {
   margin-bottom: 15px;
   border-radius: 11px;
 }
+
+/* For clicking on UX Design pages */
 @media screen and (max-width: 600px) {
   .detail-desc {
     font-size: 12px;
@@ -799,9 +858,12 @@ footer {
   .body-paragraph h1 {
     font-size: 30px;
     text-align: center;
+    width: 78%;
   }
   .body-paragraph h3 {
     font-size: 20px;
+    text-align: center;
+    width: 78%;
   }
   .body-paragraph span {
     font-size: 15px;
@@ -844,5 +906,115 @@ footer {
   }
   .step-group {
     padding-left: 0;
+    padding: 12px;
+  }
+  .step-group h3 {
+    text-align: left;
+    width: auto;
+    font-size: 17px;
+  }
+  .step-group span {
+    font-size: 14px;
+  }
+  .desktopgif-holder {
+    width: 85%;
+  }
+  .desktopgif-holder img {
+    width: 96%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .page-wordgroup {
+    width: 80%;
+  }
+  .page-relevant {
+    font-size: 12px;
+    width: 100%;
+  }
+  .page-relevant-row {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .page-relevant-row {
+    white-space: nowrap;
+    overflow: scroll;
+    justify-content: left;
+  } 
+}
+
+@media screen and (max-width: 600px) {
+  .page-wordgroup {
+    align-items: center;
+  }
+  .page-wordgroup h1 {
+    font-size: 25px;
+  }
+  .page-wordgroup span {
+    font-size: 14px;
+    width: 80%;
+  }
+  .detail-list-item {
+    margin: 10px;
+  }
+  
+}
+
+#sutechso-overlay img{ 
+  height: 80px;
+}
+#sutechso-overlay h1 {
+  margin-left:10px; 
+  font-size:40px; 
+  font-weight: 400;
+}
+
+#cards-overlay img {
+  width: 100px;
+}
+#cards-overlay h1 {
+  margin-left: 10px;
+}
+#cards-overlay span {
+  font-weight: 300; 
+  font-size:18px;
+}
+
+@media screen and (max-width: 900px) {
+  .detail-list-item-sq {
+    width: 210px;
+    margin: 10px;
+  }
+  #sutechso-overlay img { 
+    height: 60px;
+  }
+  #sutechso-overlay h1 {
+    margin-left:0px;
+    font-size:30px;
+  }
+
+  #cards-overlay img {
+    width: 70px;
+  }
+  #cards-overlay h1 {
+    margin-left: 10px;
+    font-size: 18px;
+    width: 45%;
+  }
+  #cards-overlay span {
+    font-weight: 300; 
+    font-size:12px;
+  }
+
+
+}
+
+@media screen and (max-width: 1110px){
+  #cards-overlay h1 {
+    width: 45%;
   }
 }

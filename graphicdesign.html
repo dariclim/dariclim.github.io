@@ -54,23 +54,28 @@
     <nav class="navbar">
       <div class="navbar-contents">
         <a href="index.html" class="navbar-brand">
-          <img src="images/DaricLogo_v1.svg" width="75" height="75">
+          <img src="images/DaricLogo_v1.svg">
         </a>
-
-        <div class="navmenu">
-          <div class="navmenu-item">
-            <a class="nav-link" href="index.html">Home</a>
+        <div class="navright">
+          <div class="navmenu" id="myNavmenu">
+            <div class="navmenu-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </div>
+            <div class="navmenu-item">
+              <a class="nav-link" href="uxdesign.html">UX Design</a>
+            </div>
+            <div class="navmenu-item active-link">
+              <a class="nav-link active-link" href="graphicdesign.html">Graphic Design</a>
+            </div>
+            <div class="navmenu-item">
+              <a class="nav-link" href="animation.html">Animation</a>
+            </div>
           </div>
-          <div class="navmenu-item">
-            <a class="nav-link" href="uxdesign.html">UX Design</a>
-          </div>
-          <div class="navmenu-item">
-            <a class="nav-link active-link" href="graphicdesign.html">Graphic Design</a>
-          </div>
-          <div class="navmenu-item">
-            <a class="nav-link" href="animation.html">Animation</a>
+          <div class="burger" onclick="myFunction()">
+            <img src="images/burger.svg" width="18">
           </div>
         </div>
+        
       </div>
     </nav>
 
@@ -125,8 +130,8 @@
       </a>
       <a class="detail-list-item-sq" href="images/graphicdesign/sutechso.png">
         <div class="list-item-overlay-sq" id="sutechso-overlay" style="flex-direction:row;">
-          <img src="images/graphicdesign/sutechso_logo.png" height="80" class="item-overlay-shadow">
-          <h1 class="item-overlay-shadow" style="margin-left:10px; font-size:40px; font-weight: 400;">SuTechSo</h1>
+          <img src="images/graphicdesign/sutechso_logo.png" class="item-overlay-shadow">
+          <h1 class="item-overlay-shadow">SuTechSo</h1>
         </div>
       </a>
       <a class="detail-list-item-sq" href="images/graphicdesign/vit.png">>
@@ -139,7 +144,7 @@
       <a class="detail-list-item-sq" href="images/graphicdesign/cards.png">
         <div class="list-item-overlay-sq" id="cards-overlay" style="flex-direction:row;">
           <img src="images/graphicdesign/khuyenyu_logo.png" width="100" class="item-overlay-shadow">
-          <h1 class="item-overlay-shadow" style="margin-left:10px;">Khuyen Yu <br> <span style="font-weight: 300; font-size:18px;"> Business card design</span></h1>
+          <h1 class="item-overlay-shadow">Khuyen Yu <br> <span> Business card design</span></h1>
         </div>
       </a>
       <a class="detail-list-item-sq detail-list-dud">
@@ -170,6 +175,20 @@
             navbar.classList.remove("add-shadow");
           }
         });
+
+        function myFunction() {
+         var x = document.getElementById("myNavmenu");
+         const navbar = document.querySelector('.navbar');
+         if (x.className === "navmenu") {
+           x.className += " responsive";
+           navbar.classList.add("add-shadow");
+         } else {
+           x.className = "navmenu";
+           if (window.pageYOffset === 0) {
+            navbar.classList.remove("add-shadow");
+           }
+         }
+        }
     </script>
   </body>
 </html>

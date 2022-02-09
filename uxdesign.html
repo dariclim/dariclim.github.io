@@ -70,7 +70,7 @@
       <div class="page-wordgroup">
         <h1> UX Design/Development </h1>
         <span>
-          Examples of my work with front-end development, user interface design, <br> and Figma prototyping
+          Examples of my work with front-end development, user interface design, and Figma prototyping
         </span>
         <div class="page-relevant">
           <div class="page-relevant-row">
@@ -118,24 +118,24 @@
       <a class="detail-list-item" style="background-color: #22AE84;" href="saladify.html">
         <img class="list-item-bkgd" src="images/saladify/saladify-bkgd.png">
         <div class="list-item-overlay" id="saladify-overlay">
-          <img src="images/saladify/salad.svg" width="65" height="65" class="item-overlay-shadow">
+          <img src="images/saladify/salad.svg" class="item-overlay-shadow" id="detail-saladify-brand">
           <h1 class="saladify item-overlay-shadow" style="margin-left:10px;"> Saladify </h1>
         </div>
       </a>
       <a class="detail-list-item" style="background-color: #A57DF9;" href="ezcolor.html">
         <img class="list-item-bkgd" src="images/ez/ezcolor-bkgd.png">
         <div class="list-item-overlay" id="ezcolor-overlay">
-          <img src="images/ez/ezcolor.svg" height="60" class="item-overlay-shadow">
+          <img src="images/ez/ezcolor.svg"  class="item-overlay-shadow" id="detail-ezcolor-brand">
           <h1 class="ezcolor item-overlay-shadow" style="margin-left:15px;"> ez<span style="color: #F1EAFE">color<span> </h1>
         </div>
       </a>
       <a class="detail-list-item" style="background-color: #427AA1;" href="talad.html">
         <img class="list-item-bkgd" src="images/talad/talad-bkgd.png">
         <div class="list-item-overlay" id="talad-overlay">
-          <img src="images/talad/taladLogo_fern.svg" height="75" class="item-overlay-shadow">
+          <img src="images/talad/taladLogo_fern.svg" class="item-overlay-shadow" id="detail-talad-brand">
           <div style="display: flex; flex-direction: column; margin-left: 15px;" class="item-overlay-shadow">
-            <span style="font-size: 45px; font-weight: 700; margin-bottom: -5px;" >TALAD </span>
-            <span style="font-size: 15px; font-weight: 200"> HOLDING CORP</span>
+            <span id="talad-big" >TALAD </span>
+            <span id="talad-small"> HOLDING CORP</span>
         </div>
         </div>
       </a>
@@ -157,6 +157,7 @@
             navbar.classList.remove("add-shadow");
           }
         });
+
         function myFunction() {
          var x = document.getElementById("myNavmenu");
          const navbar = document.querySelector('.navbar');
@@ -170,6 +171,7 @@
            }
          }
         }
+
     </script>
   </body>
 </html>
