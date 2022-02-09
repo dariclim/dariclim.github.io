@@ -1009,8 +1009,33 @@ footer {
     font-weight: 300; 
     font-size:12px;
   }
+}
 
+@media screen and (max-width: 460px) {
+  .detail-list-item-sq {
+    width: 330px;
+    margin: 10px;
+  }
+  #sutechso-overlay img { 
+    height: 60px;
+  }
+  #sutechso-overlay h1 {
+    margin-left:0px;
+    font-size:30px;
+  }
 
+  #cards-overlay img {
+    width: 70px;
+  }
+  #cards-overlay h1 {
+    margin-left: 10px;
+    font-size: 18px;
+    width: 45%;
+  }
+  #cards-overlay span {
+    font-weight: 300; 
+    font-size:12px;
+  }
 }
 
 @media screen and (max-width: 1110px){
