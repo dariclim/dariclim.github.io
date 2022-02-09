@@ -626,6 +626,14 @@ body {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .detail-list-item {
+    width: 90%;
+  }
+  .detail-list-dud {
+    height: 0;
+  }
+}
 
 
 
@@ -1013,7 +1021,7 @@ footer {
 
 @media screen and (max-width: 460px) {
   .detail-list-item-sq {
-    width: 330px;
+    width: 90%;
     margin: 10px;
   }
   #sutechso-overlay img { 
