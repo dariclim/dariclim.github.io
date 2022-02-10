@@ -54,98 +54,41 @@
     <nav class="navbar">
       <div class="navbar-contents">
         <a href="index.html" class="navbar-brand">
-          <img src="images/DaricLogo_v1.svg" width="75" height="75">
+          <img src="images/DaricLogo_v1.svg">
         </a>
-
-        <div class="navmenu">
-          <div class="navmenu-item">
-            <a class="nav-link" href="index.html">Home</a>
+        <div class="navright">
+          <div class="navmenu" id="myNavmenu">
+            <div class="navmenu-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </div>
+            <div class="navmenu-item">
+              <a class="nav-link" href="uxdesign.html">UX Design</a>
+            </div>
+            <div class="navmenu-item">
+              <a class="nav-link" href="graphicdesign.html">Graphic Design</a>
+            </div>
+            <div class="navmenu-item active-link">
+              <a class="nav-link active-link" href="animation.html">Animation</a>
+            </div>
           </div>
-          <div class="navmenu-item">
-            <a class="nav-link" href="uxdesign.html">UX Design</a>
-          </div>
-          <div class="navmenu-item">
-            <a class="nav-link" href="graphicdesign.html">Graphic Design</a>
-          </div>
-          <div class="navmenu-item">
-            <a class="nav-link active-link" href="animation.html">Animation</a>
+          <div class="burger" onclick="myFunction()">
+            <img src="images/burger.svg" width="18">
           </div>
         </div>
+        
       </div>
     </nav>
 
-    <div class="page-desc">
-      <div class="page-wordgroup">
-        <h1> Animation Projects </h1>
-        <span>
-          Examples of my work with front-end development, user interface design, <br> and Figma prototyping
-        </span>
-        <div class="page-relevant">
-          <div class="page-relevant-row">
-            <div>
-              Relevant skills:
-            </div>
-            <div class="relevant-bubbles">
-              Adobe After Effects
-            </div>
-            <div class="relevant-bubbles">
-              Adobe Premiere Pro
-            </div>
-            <div class="relevant-bubbles">
-              Adobe Animate
-            </div>
-            <div class="relevant-bubbles">
-              Toonboom Harmony Advanced
-            </div>
-          </div>
-
-        </div>
+    <div class="coming-soon-notice">
+      <div class="coming-soon-txtgroup">
+        <h1> Coming soon... </h1>
+        <span> Sorry for the technical difficulties, <br> I'm still working on this website. </span>
+        <button class="item-overlay-shadow" onclick="history.back()"> GO BACK </button>
       </div>
     </div>
 
 
 
-
-    <div class="page-detail-list">
-
-
-
-      <a class="detail-list-item-sq" href="images/graphicdesign/wpf.png">
-        <div class="list-item-overlay-sq" id="wpf-overlay">
-          <img src="images/graphicdesign/wpf_logo.svg" width="85" class="item-overlay-shadow" style="margin-top:10px;">
-          <h1 class="item-overlay-shadow" style="margin-left:10px;"> WHEN PIGS FEAST </h1>
-        </div>
-      </a>
-
-      <a class="detail-list-item-sq" href="images/graphicdesign/velvit.png">
-        <div class="list-item-overlay-sq" id="velvit-overlay">
-          <img src="images/graphicdesign/velvit_logo.png" height="100" class="item-overlay-shadow">
-          <img src="images/graphicdesign/velvit_text.svg" height="25" class="item-overlay-shadow" style="margin-top:10px;">
-        </div>
-      </a>
-      <a class="detail-list-item-sq" href="images/graphicdesign/sutechso.png">
-        <div class="list-item-overlay-sq" id="sutechso-overlay" style="flex-direction:row;">
-          <img src="images/graphicdesign/sutechso_logo.png" height="80" class="item-overlay-shadow">
-          <h1 class="item-overlay-shadow" style="margin-left:10px; font-size:40px; font-weight: 400;">SuTechSo</h1>
-        </div>
-      </a>
-      <a class="detail-list-item-sq" href="images/graphicdesign/vit.png">>
-        <div class="list-item-overlay-sq" id="vit-overlay">
-          <img src="images/graphicdesign/vit_logo.svg" height="100" class="item-overlay-shadow">
-          <h1 class="item-overlay-shadow" style="margin-left:10px; font-size:40px;">vit.</h1>
-        </div>
-      </a>
-
-      <a class="detail-list-item-sq" href="images/graphicdesign/cards.png">
-        <div class="list-item-overlay-sq" id="cards-overlay" style="flex-direction:row;">
-          <img src="images/graphicdesign/khuyenyu_logo.png" width="100" class="item-overlay-shadow">
-          <h1 class="item-overlay-shadow" style="margin-left:10px;">Khuyen Yu <br> <span style="font-weight: 200; font-size:18px;"> Business card design</span></h1>
-        </div>
-      </a>
-      <a class="detail-list-item-sq detail-list-dud">
-      </a>
-
-    </div>
 
     <footer>
     </footer>
@@ -170,6 +113,19 @@
             navbar.classList.remove("add-shadow");
           }
         });
+        function myFunction() {
+         var x = document.getElementById("myNavmenu");
+         const navbar = document.querySelector('.navbar');
+         if (x.className === "navmenu") {
+           x.className += " responsive";
+           navbar.classList.add("add-shadow");
+         } else {
+           x.className = "navmenu";
+           if (window.pageYOffset === 0) {
+            navbar.classList.remove("add-shadow");
+           }
+         }
+        }
     </script>
   </body>
 </html>

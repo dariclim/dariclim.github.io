@@ -342,20 +342,19 @@ body {
     margin-right: 30px;
   }
   .preview-desc h1 {
-    font-size: 24px;
+    font-size: 19px;
   }
   .preview-desc span {
-    font-size: 14px;
+    font-size: 13px;
   }
   .preview-pic {
     margin-right: 0;
   }
-
+  .seemore-btn {
+    width: 107px;
+    height: 36px;
+  }
 }
-
-
-
-
 .page-desc {
   display: flex;
 
@@ -629,6 +628,10 @@ body {
 @media screen and (max-width: 500px) {
   .detail-list-item {
     width: 90%;
+    height: 170px; 
+  }
+  .list-item-bkgd {
+    height: 170px;
   }
   .detail-list-dud {
     height: 0;
@@ -765,6 +768,9 @@ footer {
   font-weight: 400;
   text-align: justify;
   font-size: 18px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 .body-large-img {
   display: flex;
@@ -864,7 +870,7 @@ footer {
     margin-top: 80px;
   }
   .body-paragraph h1 {
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
     width: 78%;
   }
@@ -882,12 +888,12 @@ footer {
   }
   .body-large-img {
     width: 80%;
-    border-radius: 25px;
+    border-radius: 15px;
   }
   .body-large-img img {
     width: 95%;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -920,9 +926,11 @@ footer {
     text-align: left;
     width: auto;
     font-size: 17px;
+    white-space: nowrap;
   }
   .step-group span {
     font-size: 14px;
+    font-weight: 500;
   }
   .desktopgif-holder {
     width: 85%;
@@ -972,6 +980,9 @@ footer {
   .detail-desc-date{
     margin-right:0;
   }
+  footer {
+    height:24px;
+  }
 }
 
 #sutechso-overlay img{ 
@@ -997,6 +1008,7 @@ footer {
   font-weight: 300; 
   font-size:18px;
 }
+
 
 @media screen and (max-width: 900px) {
   .detail-list-item-sq {
@@ -1054,10 +1066,6 @@ footer {
     font-weight: 300; 
     font-size:12px;
   }
- 
-  footer{
-    height:0;
-  }
 }
 
 @media screen and (max-width: 1110px){
@@ -1077,6 +1085,32 @@ footer {
   font-size: 20px;
 }
 
+#ezcolor-heading img {
+  height: 90px;
+}
+#ezcolor-heading h1 {
+  font-size: 75px; 
+  font-weight: 900; 
+  margin:0;
+}
+
+#talad-heading img {
+  width: 120px;
+  height: 120px;
+}
+#talad-heading h1 {
+  font-size: 56px;
+  font-weight: 700; 
+  margin:0; 
+  margin-bottom: -6px;
+}
+#talad-heading h2 {
+  font-size: 20px; 
+  font-weight: 200; 
+  margin:0;
+}
+
+
 @media screen and (max-width: 500px) {
   #saladify-heading img {
     width: 90px;
@@ -1091,5 +1125,95 @@ footer {
     width: 57%;
     text-align: center;
   }
-  
+  #ezcolor-heading img {
+    height: 65px;
+  }
+  #ezcolor-heading h1 {
+    font-size: 55px; 
+    font-weight: 900; 
+    margin:0;
+  }
+  #talad-heading img {
+    width: 58px;
+    height: 100px;
+  }
+  #talad-heading h1 {
+    font-size: 40px;
+    font-weight: 700; 
+    margin:0; 
+    margin-bottom: -6px;
+  }
+  #talad-heading h2 {
+    font-size: 13px; 
+    font-weight: 200; 
+    margin:0;
+  }
+  #talad-desc-caption {
+    width: 64%;
+  }
+  .detail-body {
+    border-radius: 40px 40px 0px 0px;
+  }
+  footer {
+    height:0;
+  }
+}
+
+.coming-soon-notice {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.coming-soon-txtgroup {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 36px;
+  text-align: center;
+}
+.coming-soon-txtgroup h1 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.coming-soon-txtgroup span {
+  font-size: 25px;
+  font-weight: 200;
+}
+.coming-soon-txtgroup button {
+  margin-top: 40px;
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  border-radius: 40px;
+  padding: 20px 50px 20px 50px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: rgba(255,255,255,0.8);
+  transition: background-color 0.5s ease;
+}
+.coming-soon-txtgroup button:hover {
+  background-color: rgba(255,255,255,1.0);
+  font-weight: 900;
+}
+
+@media screen and (max-width: 500px){
+  .coming-soon-txtgroup h1 {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+  }
+  .coming-soon-txtgroup span {
+    font-size: 18px;
+    font-weight: 200;
+  }
+  .coming-soon-txtgroup button {
+    margin-top: 40px;
+    border-radius: 40px;
+    padding: 15px 40px 15px 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: rgba(255,255,255,0.8);
+  }
 }
