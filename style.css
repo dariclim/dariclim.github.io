@@ -538,9 +538,28 @@ body {
   background-color: #857bbd;
 }
 
+#pdpsi-overlay {
+  background-color: rgba(219, 49, 49);
+  transition: background-color 0.5s ease;
+}
+#pdpsi-overlay:hover {
+  background-color: rgba(226, 96, 96);
+  
+}
+#pdpsi-overlay img {
+  width: 200px;
+}
 
-
-
+#chikara-overlay {
+  background-color: rgba(250, 175, 63);
+  transition: background-color 0.5s ease;
+}
+#chikara-overlay:hover {
+  background-color: rgba(247, 190, 114);
+}
+#chikara-overlay img {
+  width: 110px;
+}
 
 #saladify-overlay {
   background-color: rgba( 34, 147, 79, 0.8);
@@ -622,6 +641,12 @@ body {
   #talad-small {
     font-size: 8px;
     font-weight: 200;
+  }
+  #pdpsi-overlay img {
+    width: 150px;
+  }
+  #chikara-overlay img {
+    width: 95px;
   }
 }
 
@@ -1034,6 +1059,9 @@ footer {
   #cards-overlay span {
     font-weight: 300; 
     font-size:12px;
+  }
+  #pdpsi-overlay img {
+    width: 180px;
   }
 }
 
