@@ -577,6 +577,14 @@ body {
   background-color: rgba( 165, 125, 249, 1);
 }
 
+#cuboaipkg-overlay {
+  background-color: rgba( 115, 202, 198, 1);
+  transition: background-color 1s ease;
+}
+#cuboaipkg-overlay:hover {
+  background-color: rgba( 169, 234, 229, 1);
+}
+
 #talad-overlay {
   font-family: sans-serif;
   display: flex;
@@ -1100,6 +1108,10 @@ footer {
   #cards-overlay h1 {
     width: 45%;
   }
+}
+
+#cuboaipkg img {
+
 }
 
 #saladify-heading img {
