@@ -585,6 +585,14 @@ body {
   background-color: rgba( 169, 234, 229, 1);
 }
 
+#afxrush-overlay {
+  background-color: rgba( 250, 207, 205, 1);
+  transition: background-color 1s ease;
+}
+#afxrush-overlay:hover {
+  background-color: rgb(201, 139, 136);
+}
+
 #talad-overlay {
   font-family: sans-serif;
   display: flex;
